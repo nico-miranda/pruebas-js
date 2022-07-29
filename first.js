@@ -17,7 +17,7 @@ while(nombre != "ESC"){
 function solicitarNombre(){
     let nombreIngresado   = prompt("Ingresar nombre")
     console.log("El nombre ingresado es " + nombreIngresado)
-} */
+} 
 let cuenta = parseFloat(prompt("La cuenta es:"));
 let plato = "";
 let gastos = 0;
@@ -39,4 +39,31 @@ while (plato.toUpperCase() != "ESC") {
         alert("El saldo es: $" + gastos + " pesos ");
         break;
     }
+} */
+/*class riotGames{
+    constructor(nombres, calificacion) {
+        this.nombres = nombres.toUpperCase();
+        this.calificacion = parseFloat(calificacion);
+    }
 }
+const juegos = [];
+    juegos.push(new juego("League of legends", 10));
+    juegos.push(new juego("Valorant", 8));
+    juegos.push(new juego("Tft", 6));
+    juegos.puh(new juego("League of runaterra", 3));
+console.log(juegos);
+
+for (const juego of juegos) {
+    juego.sumaIva();
+    console.log("Nombre del juego: " + juego.nombre)
+} */
+
+
+let juegos = ["league of legends" , "valorant" , "teamfight tactics"];
+for(let i=0 ; i<juegos.length; i++){ 
+    console.log(juegos[i]) 
+}
+juegos.sort((a, b) => {
+    return a.id - b.id;
+})
+
