@@ -56,7 +56,7 @@ console.log(juegos);
 for (const juego of juegos) {
     juego.sumaIva();
     console.log("Nombre del juego: " + juego.nombre)
-} */
+} 
 
 
 let juegos = ["league of legends" , "valorant" , "teamfight tactics"];
@@ -65,5 +65,47 @@ for(let i=0 ; i<juegos.length; i++){
 }
 juegos.sort((a, b) => {
     return a.id - b.id;
-})
+}) */ 
 
+//prompt
+const datos = {
+    nombre: "", 
+    edad: "",
+    telefono:"", 
+    email:"",
+    ubicacion:"", 
+    formaPago: "",
+  }
+  
+  datos.nombre=prompt("Ingrese su nombre y apellido: "); 
+  datos.edad=prompt("Ingrese su edad: "); 
+  datos.telefono=prompt("Ingrese su telefono: "); 
+  datos.email=prompt("Ingrese su mail: "); 
+  datos.ubicacion=prompt("Ingrese su ciudad de residencia: "); 
+  datos.formaPago=prompt("Ingrese su metodo de pago: ");
+  
+  alert(`Nombre: ${datos.nombre} 
+         Edad: ${datos.edad} 
+         Telefono: ${datos.telefono} 
+         Email: ${datos.email} 
+         Ubicación: ${datos.ubicacion}
+         Forma de pago: ${datos.formaPago}
+  `)
+
+//arrays
+  let datosPersonales = ["Nombre, Edad, telefono, mail, ubicacion, metodo de pago"];
+for(let i=0 ; i<datosPersonales.length; i++){ 
+    console.log(datosPersonales[i]) 
+}
+datosPersonales.sort((a, b) => {
+    return a.id - b.id;})
+
+    //functions
+    function dni() {
+        let identificacion = prompt("Ingrese su carnet de identificación");
+         if (identificacion != "") {
+        alert("Tu documento es: " + identificacion);
+          } 
+        }
+    dni(); 
+     
