@@ -67,7 +67,6 @@ juegos.sort((a, b) => {
     return a.id - b.id;
 }) */ 
 
-//prompt
 const datos = {
     nombre: "", 
     edad: "",
@@ -92,7 +91,6 @@ const datos = {
          Forma de pago: ${datos.formaPago}
   `)
 
-//arrays
   let datosPersonales = ["Nombre, Edad, telefono, mail, ubicacion, metodo de pago"];
 for(let i=0 ; i<datosPersonales.length; i++){ 
     console.log(datosPersonales[i]) 
@@ -100,7 +98,6 @@ for(let i=0 ; i<datosPersonales.length; i++){
 datosPersonales.sort((a, b) => {
     return a.id - b.id;})
 
-    //functions
     function dni() {
         let identificacion = prompt("Ingrese su carnet de identificación");
          if (identificacion != "") {
